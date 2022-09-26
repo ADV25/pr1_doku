@@ -1,1 +1,22 @@
 site_name: My Docs
+theme:
+  name: material
+  palette:
+    primary: red
+  language: de
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+nav:
+  - Home: 'index.md'
+  - Arbeitstechniken: 'at/index.md'
+  - BWL: 'bwl/index.md'
+  - 'Hardware- und Systemgrundlagen': 'hsg/index.md'
+  - 'Informationstechnische Grundbildung': 'igw/index.md'
+  - 'Mathe-Medien': 'm/index.md'
+  - Mediengestaltung: 'mg/index.md'
+  - Medienprogrammierung: 'mpr/index.md'
+  - Organisationslehre: 'org/index.md'
+  - Programmierung: 'pr/index.md'
+extra_css:
+  - stylesheets/extra.css
