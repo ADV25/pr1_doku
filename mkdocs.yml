@@ -11,6 +11,7 @@ theme:
   language: de
   features:
     - navigation.sections
+    - content.code.annotate
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
@@ -19,3 +20,9 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shorthand: true
   - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - tables
