@@ -1,0 +1,33 @@
+<div class="md-copyright">
+    {% if config.copyright %}
+    <div class="md-copyright__highlight">
+        {{ config.copyright }}
+    </div>
+    {% endif %}
+
+    <div>
+        <a
+                href="https://devdal.net/impressum"
+                target="_blank" rel="noopener"
+        >
+            Impressum
+        </a>
+        -
+        <a
+                href="https://devdal.net/datenschutz"
+                target="_blank" rel="noopener"
+        >
+            Datenschutz
+        </a>
+    </div>
+
+    {% if not config.extra.generator == false %}
+    Made with
+    <a
+            href="https://squidfunk.github.io/mkdocs-material/"
+            target="_blank" rel="noopener"
+    >
+        Material for MkDocs
+    </a>
+    {% endif %}
+</div>

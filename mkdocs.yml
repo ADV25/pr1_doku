@@ -1,22 +1,20 @@
-site_name: My Docs
+site_name: PR1 Dokumentation
 theme:
   name: material
+  custom_dir: overrides
   palette:
     primary: red
   language: de
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-nav:
-  - Home: 'index.md'
-  - Arbeitstechniken: 'at/index.md'
-  - BWL: 'bwl/index.md'
-  - 'Hardware- und Systemgrundlagen': 'hsg/index.md'
-  - 'Informationstechnische Grundbildung': 'igw/index.md'
-  - 'Mathe-Medien': 'm/index.md'
-  - Mediengestaltung: 'mg/index.md'
-  - Medienprogrammierung: 'mpr/index.md'
-  - Organisationslehre: 'org/index.md'
-  - Programmierung: 'pr/index.md'
+    - navigation.sections
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - extra_javascripts/extra.js
+markdown_extensions:
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+  - attr_list
+  - markdown.extensions.toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
+      permalink: "\ue157"
