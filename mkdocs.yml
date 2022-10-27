@@ -1,4 +1,8 @@
 site_name: PR1 Dokumentation
+site_author: BD
+copyright: BD
+repo_url: https://github.com/bdwebnet/pr1_doku
+edit_uri: blob/main/
 theme:
   name: material
   custom_dir: overrides
@@ -15,6 +19,3 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shorthand: true
   - attr_list
-  - markdown.extensions.toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify { kwds: { case: lower } }
-      permalink: "\ue157"
