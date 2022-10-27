@@ -2,7 +2,7 @@ site_name: PR1 Dokumentation
 site_author: BD
 copyright: BD
 repo_url: https://github.com/bdwebnet/pr1_doku
-edit_uri: blob/main/
+edit_uri: edit/main/docs
 theme:
   name: material
   custom_dir: overrides
