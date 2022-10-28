@@ -30,3 +30,13 @@ int alter = scannerName.nextInt(); //Auslesen von einer Ganzzahl
 double groese = scannerName.nextDouble(); //Auslesen von einer Fließkommazahl
 
 ```
+
+### Scanner am Ende schließen
+
+``` java
+scannerName.close();
+```
+
+Weiterführende Links / Quellen:
+
+ - https://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html
