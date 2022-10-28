@@ -11,10 +11,14 @@ theme:
   features:
     - navigation.sections
     - content.code.annotate
+    - navigation.tabs
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
-  - extra_javascripts/extra.js
+  - javascripts/extra.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shorthand: true
@@ -25,3 +29,11 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+

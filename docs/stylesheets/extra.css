@@ -5,3 +5,7 @@ ul.md-tabs__list {
 /*.md-footer nav.md-footer__inner {
     display: none;
 }*/
+
+.keys kbd {
+    user-select: none;
+}
