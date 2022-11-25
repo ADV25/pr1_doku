@@ -1,0 +1,38 @@
+name: Build and deploy to gh-pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allow to run workflow manually
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.1.0
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+          fetch-depth: '0' # https://github.com/timvink/mkdocs-git-revision-date-localized-plugin#note-when-using-build-environments
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y install python3-pip
+          pip install -r requirements.txt
+
+      - name: Build site
+        run: |
+          mkdocs build --verbose --clean
+
+      - name: Fixing redirects
+        run: |
+          bash .github/workflows/fix_redirects.sh
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+          branch: gh-pages # The branch the action should deploy to.
+          folder: site # The folder the action should deploy.
