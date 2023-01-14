@@ -8,7 +8,7 @@
 StringBuilder NewStrb = new StringBuilder();
 ```
 
-### StringBuilder Constructors
+### StringBuilder Konstruktoren:
 
 ```java
 StringBuilder();

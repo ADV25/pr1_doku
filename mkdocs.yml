@@ -20,6 +20,7 @@ nav:
       - Scanner: eingabe/scanner.md
       - Formatierung: ausgabe/formatierung.md
       - StringBuilder: klassen/stringbuilder.md
+      - StringTokenizer: klassen/stringtokenizer.md
 
 theme:
   font: false
