@@ -1,7 +1,24 @@
 site_name: PR1 Dokumentation
-site_author: BD
-repo_url: https://github.com/bdwebnet/pr1_doku
-edit_uri: edit/main/docs
+site_author: BD & GreenM4x
+
+nav:
+  - index.md
+  - Eingabe:
+      - Scanner: eingabe/scanner.md
+  - Verarbeitung:
+      - Arrays: verarbeitung/arrays.md
+      - Datentypen: verarbeitung/datentypen.md
+      - Rechnen: verarbeitung/rechnen.md
+      - Schleifen: verarbeitung/schleifen.md
+  - Ausgabe:
+      - Formatierung: ausgabe/formatierung.md
+      - Textausgabe: ausgabe/textausgabe.md
+  - Objektorientierung:
+      - "Objekte und Klassen": objektorientierung/klassen.md
+      - Zugriffsmodifikator: objektorientierung/zugriffsmodifikator.md
+  - Klassen:
+      - Scanner: eingabe/scanner.md
+
 theme:
   font: false
   name: material
@@ -12,15 +29,17 @@ theme:
   features:
     - navigation.sections
     - content.code.annotate
-    - navigation.tabs
+    -
 extra_css:
-  - stylesheets/extra.css
-  - stylesheets/roboto.css
+  - assets/stylesheets/extra.css
+  - assets/stylesheets/roboto.css
+
 extra_javascript:
-  - javascripts/extra.js
-  - javascripts/mathjax.js
-  - javascripts/polyfill.min.js
-  - javascripts/tex-mml-chtml.js
+  - assets/javascripts/extra.js
+  - assets/javascripts/mathjax.js
+  - assets/javascripts/polyfill.min.js
+  - assets/javascripts/tex-mml-chtml.js
+
 markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shorthand: true
@@ -38,4 +57,3 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.arithmatex:
       generic: true
-
