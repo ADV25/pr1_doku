@@ -18,6 +18,7 @@ nav:
       - Zugriffsmodifikator: objektorientierung/zugriffsmodifikator.md
   - Klassen:
       - Scanner: eingabe/scanner.md
+      - Formatierung: ausgabe/formatierung.md
       - StringBuilder: klassen/stringbuilder.md
 
 theme:
