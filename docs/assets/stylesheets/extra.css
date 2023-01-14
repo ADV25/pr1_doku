@@ -1,5 +1,5 @@
 ul.md-tabs__list {
-    white-space: normal;
+  white-space: normal;
 }
 
 /*.md-footer nav.md-footer__inner {
@@ -7,5 +7,7 @@ ul.md-tabs__list {
 }*/
 
 .keys kbd {
-    user-select: none;
+  user-select: none;
 }
+
+
