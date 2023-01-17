@@ -509,6 +509,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../ausgabe/formatierung/" class="md-nav__link">
+        Formatierung
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -520,10 +534,82 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          StringBuilder
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         StringBuilder
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bearbeitung-von-zeichenketten-stringbuilder" class="md-nav__link">
+    Bearbeitung von Zeichenketten - StringBuilder
+  </a>
+  
+    <nav class="md-nav" aria-label="Bearbeitung von Zeichenketten - StringBuilder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stringbuilder-objekt-erstellen" class="md-nav__link">
+    StringBuilder Objekt erstellen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stringbuilder-konstruktoren" class="md-nav__link">
+    StringBuilder Konstruktoren:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wichtige-methoden" class="md-nav__link">
+    Wichtige Methoden
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stringtokenizer/" class="md-nav__link">
+        StringTokenizer
+      </a>
     </li>
   
 
@@ -555,6 +641,48 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bearbeitung-von-zeichenketten-stringbuilder" class="md-nav__link">
+    Bearbeitung von Zeichenketten - StringBuilder
+  </a>
+  
+    <nav class="md-nav" aria-label="Bearbeitung von Zeichenketten - StringBuilder">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stringbuilder-objekt-erstellen" class="md-nav__link">
+    StringBuilder Objekt erstellen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stringbuilder-konstruktoren" class="md-nav__link">
+    StringBuilder Konstruktoren:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wichtige-methoden" class="md-nav__link">
+    Wichtige Methoden
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -568,6 +696,37 @@
 
 
 <h1 id="string-builder">String Builder</h1>
+<h2 id="bearbeitung-von-zeichenketten-stringbuilder">Bearbeitung von Zeichenketten - <code>StringBuilder</code></h2>
+<h3 id="stringbuilder-objekt-erstellen">StringBuilder Objekt erstellen</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">StringBuilder</span> <span class="n">NewStrb</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="stringbuilder-konstruktoren">StringBuilder Konstruktoren:</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">StringBuilder</span><span class="p">();</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1">//Leerer StringBuilder mit einer initiale Kapazität von 16 Chars.</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">StringBuilder</span><span class="p">(</span><span class="n">CharSequence</span> <span class="n">seq</span><span class="p">);</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1">//String mit einer CharSequence als inhalt</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="n">StringBuilder</span><span class="p">(</span><span class="kt">int</span> <span class="n">capacity</span><span class="p">);</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="c1">//Leerer String mit der Kapazität von dem Int</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="n">StringBuilder</span><span class="p">(</span><span class="n">String</span> <span class="n">str</span><span class="p">);</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="c1">//String mit einem String als inhalt</span>
+</code></pre></div>
+<h3 id="wichtige-methoden">Wichtige Methoden</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">NewStrb</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="cm">/*Variable*/</span><span class="p">);</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="c1">// Anhängen von einer Varibale. (boolean, char, double, String...)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">NewStrb</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="kt">int</span> <span class="n">index</span><span class="p">);</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="c1">// Gibt den Wert von dem Char an dem angegeben Index zurück.</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="n">NewStrb</span><span class="p">.</span><span class="na">length</span><span class="p">();</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="c1">// Gibt die Länge vom String zurück (Anzahl an Chars).</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="n">NewStrb</span><span class="p">.</span><span class="na">reverse</span><span class="p">();</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="c1">// Dreht die reihenfolge der Chars um.</span>
+</code></pre></div>
+<p>Weiterführende Links / Quellen:</p>
+<ul>
+<li><a href="https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html">https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html</a></li>
+</ul>
 
               
             </article>
@@ -581,7 +740,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../eingabe/scanner/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Scanner" rel="prev">
+        <a href="../../ausgabe/formatierung/" class="md-footer__link md-footer__link--prev" aria-label="Zurück: Formatierung" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -590,11 +749,26 @@
               <span class="md-footer__direction">
                 Zurück
               </span>
-              Scanner
+              Formatierung
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../stringtokenizer/" class="md-footer__link md-footer__link--next" aria-label="Weiter: StringTokenizer" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Weiter
+              </span>
+              StringTokenizer
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
