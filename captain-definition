@@ -5,9 +5,9 @@
     "RUN mkdir -p /usr/src/app",
     "WORKDIR /usr/src/app",
     "COPY ./ ./",
-    "RUN ls",
     "RUN pip install -r requirements.txt",
     "RUN mkdocs build",
+    "RUN ls",
     "COPY ./site ./"
   ]
 }
