@@ -3,8 +3,10 @@
   "dockerfileLines": [
     "FROM python:3.9",
     "RUN mkdir -p /usr/src/app",
+    "WORKDIR /usr/src/app",
     "RUN ls",
-    "WORKDIR ./",
+    "COPY ./requirements.txt ./",
+    "RUN ls",
     "RUN pip install -r requirements.txt",
     "RUN mkdocs build",
     "COPY ./site ./"
