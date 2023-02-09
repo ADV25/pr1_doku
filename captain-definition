@@ -3,6 +3,7 @@
   "dockerfileLines": [
     "FROM python:3.9",
     "RUN mkdir -p /usr/src/app",
+    "RUN ls",
     "WORKDIR ./",
     "RUN pip install -r requirements.txt",
     "RUN mkdocs build",
