@@ -8,6 +8,7 @@
     "RUN pip install -r requirements.txt",
     "RUN mkdocs build",
     "RUN mv ./site /app",
-    "Run ls /app"
+    "Run ls /app",
+    "RUN chmod -R 777 /app"
   ]
 }
