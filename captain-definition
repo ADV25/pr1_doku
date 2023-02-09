@@ -2,6 +2,8 @@
   "schemaVersion": 2,
   "dockerfileLines": [
     "FROM python:3.9",
+    "RUN mkdir -p /usr/src/app",
+    "WORKDIR ./",
     "RUN pip install -r requirements.txt",
     "RUN mkdocs build",
     "COPY ./site ./"
