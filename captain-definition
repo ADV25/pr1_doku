@@ -7,7 +7,7 @@
     "COPY ./ ./",
     "RUN pip install -r requirements.txt",
     "RUN mkdocs build",
-    "RUN ls",
-    "RUN mv ./site /app"
+    "RUN mv ./site /app",
+    "Run ls /app"
   ]
 }
