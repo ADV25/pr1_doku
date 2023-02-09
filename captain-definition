@@ -8,6 +8,8 @@
     "RUN pip install -r requirements.txt",
     "RUN mkdocs build",
     "RUN ls",
-    "COPY ./site ./"
+    "RUN mv ./site ./../",
+    "RUN rm -r *",
+    "RUN mv ./../site ./"
   ]
 }
