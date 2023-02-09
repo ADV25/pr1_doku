@@ -6,6 +6,7 @@
     "WORKDIR /usr/src/app",
     "COPY ./ /usr/src/app",
     "RUN pip install -r requirements.txt",
-    "RUN mkdocs build"
+    "RUN mkdocs build",
+    "COPY /usr/src/app/site/ /usr/src/app"
   ]
 }
