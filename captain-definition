@@ -1,14 +1,4 @@
 {
   "schemaVersion": 2,
-  "dockerfileLines": [
-    "FROM python:3.9",
-    "RUN mkdir -p /usr/src/app",
-    "WORKDIR /usr/src/app",
-    "COPY ./ ./",
-    "RUN pip install -r requirements.txt",
-    "RUN mkdocs build",
-    "RUN mv ./site /app",
-    "Run ls /app",
-    "RUN chmod -R 777 /app"
-  ]
+  "templateId": "php/8.1"
 }
