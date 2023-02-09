@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "dockerfileLines": [
     "FROM php:8.1",
-    "RUN ls /var/www/html",
+    "RUN ls -la",
     "COPY ./site /var/www/html"
   ]
 }
